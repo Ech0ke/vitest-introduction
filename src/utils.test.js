@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { delayedFunc, sum } from "./utils";
 
-// use decribe for test grouping
+// use describe for test grouping
 describe("#sum", () => {
   it("should add the numbers passed to it", () => {
     const a = 1;
@@ -20,7 +20,7 @@ describe("#sum", () => {
 it("should be same object values", () => {
   const object = { name: "A" };
   const newObject = { name: "A" };
-  //use toEqual to check if object or array values are the same, using toBe vill compare references
+  //use toEqual to check if object or array values are the same, using toBe will compare references
   expect(object).toEqual(newObject);
 });
 
